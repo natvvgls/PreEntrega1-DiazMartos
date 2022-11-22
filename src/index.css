@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .container {
+        @apply w-[312px] mx-auto 
+        sm:w-full sm:px-[8%]
+        xl:w-[1180px] xl:px-0
+    }
+}
