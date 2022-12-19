@@ -1,13 +1,16 @@
+import ItemList from "./ItemList"
 
 const ItemListContainer = ({ greeting }) => {
    return (
       <div
-         className="w-full py-[24px] text-center
-         bg-[#BED887] rounded-[8px]">
-         <p className="font-semibold text-[24px]"> 
-            {greeting} 
+         className="container ">
+         <p className=" text-center text-[40px] py-[40px]">
+            {greeting}
          </p>
-      </div>
+         <div>
+            <ItemList/>
+         </div>
+      </div >
    )
 }
 

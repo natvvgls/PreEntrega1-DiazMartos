@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .pNav {
+        @apply cursor-pointer
+        py-[8px] px-[12px] rounded-[12px]
+        hover:bg-gray-200
+    }
+}
+
 @layer utilities {
     .container {
         @apply w-[312px] mx-auto 

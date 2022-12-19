@@ -1,16 +1,19 @@
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 function App() {
    return (
       <div>
-         <NavBar/>
-         <div className="container py-[40px]
-            grid gap-[24px] sm:grid-cols-3">
-            <ItemListContainer greeting="Producto 1"/>
-            <ItemListContainer greeting="Producto 2"/>
-            <ItemListContainer greeting="Producto 3"/>
-         </div>
+         <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer greeting='¡Bienvenido!' />} /> 
+            <Route path="/category/:idCategory" element={<ItemListContainer/>} /> 
+            <Route path="/item/:id" element={<ItemDetailContainer />} />  
+          </Routes>
+        </BrowserRouter>
       </div>
    );
 }
