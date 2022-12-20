@@ -141,7 +141,7 @@ const ItemList = () => {
       })
    }
    return (
-      <div className="grid grid-cols-3 gap-[40px] py-[40px]">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[40px] py-[40px]">
          {products.map(p => <Item key={p.idCategory} {...p} />)}
       </div >
    )

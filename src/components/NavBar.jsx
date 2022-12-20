@@ -18,10 +18,11 @@ const NavBar = () => {
             </Link>
             <div />
             <div className="flex gap-[16px] items-center">
-               <Link to={'/item/1'} className="pNav"> Pop </Link>
-               <Link to={'/item/4'} className="pNav"> K-Pop </Link>
-               <Link to={'/item/7'} className="pNav"> Rock </Link>
-               <Link to={'/item/10'} className="pNav"> Baladas </Link>
+               <Link to={'/'} className="pNav"> Home </Link>
+               <Link to={'/category/Pop'} className="pNav"> Pop </Link>
+               <Link to={'/category/k-pop'} className="pNav"> K-Pop </Link>
+               <Link to={'/category/Rock'} className="pNav"> Rock </Link>
+               <Link to={'/category/Balada'} className="pNav"> Baladas </Link>
                <div className="dropdown dropdown-end">
                   <label tabIndex={0} className="btn btn-ghost btn-circle">
                      <div className="indicator">
